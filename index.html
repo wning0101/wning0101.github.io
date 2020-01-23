@@ -4,27 +4,200 @@
   <title>Ching-Wei Lin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <ul class="nav nav-tabs">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="project.html">Projects</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
-  </ul>
 </head>
-    <body>
-        <section1>
-            <h2>It doesn't matter when you start, persistence does.</h2>
-        </section1>
-    </body>
-    <footer>
-        <section2>
-            <a href="https://www.linkedin.com/in/ching-wei-lin-49460b144/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/wning0101" class="fa fa-github"></a>
-            <a href="mailto:willylin0607@gmail.com" class="fa fa-envelope"></a>
-        </section>
-    </footer>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#demo">DEMO</a></li>
+        <li><a href="index.html#project">PROJECT</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Ching-Wei Lin</h1> 
+  <p>Software Enigneer looking for new opportunity</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Me</h2><br>
+      <h4>I am Ching-Wei Lin, and I am a graduated master student in computer science at Portland State University, concentrating on ​full stack website development and artificial intelligence​. I graduated in December 2019 and I am ready to work immediately.</h4><br>
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-3">
+      <img src="me.jpeg" style="margin-left: 0%"> 
+    </div>
+  </div>
+</div>
+
+<div id="demo" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="split.png" style="width: 70%">
+    </div>
+    <div class="col-sm-10">
+      <h2>Full Stack Website Development Demo</h2><br>
+      <h4>Using React.js as my frame, MongoDB as my cloud data base and deployed on Netlify. Split money is a website application that can make group spending splitted wiser!</h4><br>
+      <a href="https://eager-hugle-908cfd.netlify.com/" style="font-size: 150%">Check it</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="project" class="container-fluid text-center bg-white">
+  <h2>Projects</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="chatroom.png" width="400" height="300">
+    </div>
+    <div class="col-sm-4">
+      <img src="8queen.png" width="400" height="300">
+    </div>
+    <div class="col-sm-4">
+      <img src="digit.png" width="400" height="300">
+    </div>
+  </div>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <br>
+        <p><strong>Internet Relay Chat Room</strong></p>
+        <p>This system employs a central server which ''relays'' messages that are sent to it to other connected users. Users can join rooms, which are groups of users that are subscribed to the same message stream. Any message sent to that room is forwarded to all users currently joined to that room. User can list all the members in the room and all the rooms current existence. Users can also send private messages directly to other users or join multiple rooms at the same time.</p>
+        <a href="https://github.com/wning0101/Internet-Relay-Chat-Room-Project"
+           style="font-size: 120%">Check it on GitHub</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <br>
+        <p><strong>Artificial Intelligence Projects</strong></p>
+        <p>The first project is solving 3*3 matrix problem. We are only allowed to exchange one number for one step. Our goal is to sort the matrix in order with the minimum steps. I implemented the solution by A* algorithm and BFS algorithm. Finally, I found that A* solves the problem better. The second project is solving 8 queens problem. I implemented the solution by genetic algorithm and optimized the numbers of population and mutation possibility.</p>
+        <a href="https://github.com/wning0101/Artificial-Intelligent-Projects"
+           style="font-size: 120%">Check it on GitHub</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <br>
+        <p><strong>Hand Written Digit Recognition System</strong></p>
+        <p>I implemented this Hand Written Digit Recognition System by three layers neural networks. Each layer contains one bias node to adjust my training and they are all fully connected to the next layer. The values produced by forward propagation, but the node coefficients are update by backward propagation. After trained by 60000 images, the model performs a 95% accuracy on 10000 testing images.</p><br>
+        <a href="https://github.com/wning0101/hand_write_digit_recognition_NN"
+           style="font-size: 120%">Check it on GitHub</a>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What I always tell myself</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"It doesn't matter when you start, persistence does.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Don't be afraid of difficult challenge. Enjoy it."</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Stay hungry. Stay positive."</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <a href="https://www.linkedin.com/in/ching-wei-lin-49460b144/" class="fa fa-linkedin" style="font-size:65px;margin-left: 21%"></a>
+      <a href="https://github.com/wning0101" class="fa fa-github" style="font-size:65px;margin-left: 21%"></a>
+      <a href="mailto:willylin0607@gmail.com" class="fa fa-envelope" style="font-size:65px;margin-left: 21%"></a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
 </html>
